@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="p-5 lg:p-[30px_150px]">
+
+  <!-- мобильная шапка -->
+  <div class="flex justify-between items-center lg:hidden">
+    <img src="./images/logo.svg" alt="">
+    <button class="flex flex-col gap-1">
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+    </button>
+  </div>
+
+  <!-- десктопная верхняя строка -->
+  <div class="hidden lg:flex justify-between items-center">
+    <h1 class="text-[rgba(104,104,104,1)] text-[16px]">Сеть клиник Томской области</h1>
+    <p class="flex items-center gap-[10px] text-[rgba(104,104,104,1)] text-[16px]"><img src="./images/glaz.svg" alt="">Версия для слабовидящих</p>
+    <div class="flex gap-[20px]">
+      <h1 class="text-[rgba(0,0,0,1)] text-[22px]">+ 7 (978) 00-00-000</h1>
+      <button class="w-[150px] h-[36px] bg-[rgba(59,185,109,1)] text-[14px] text-white rounded-[30px]">Записаться на прием</button>
+    </div>
+  </div>
+
+  <!-- десктопное меню -->
+  <div class="hidden lg:flex pt-[25px] items-center gap-[70px]">
+    <img src="./images/logo.svg" alt="">
+    <p class="text-[rgba(13,35,59,1)] text-[15px]">Врачи</p>
+    <p class="text-[rgba(13,35,59,1)] text-[15px]">Услуги</p>
+    <p class="text-[rgba(13,35,59,1)] text-[15px]">Диагностика</p>
+    <p class="text-[rgba(13,35,59,1)] text-[15px]">Анализы</p>
+    <p class="text-[rgba(13,35,59,1)] text-[15px]">Акции</p>
+    <p class="text-[rgba(13,35,59,1)] text-[15px]">Пациентам</p>
+    <p class="text-[rgba(13,35,59,1)] text-[15px]">О клинике</p>
+    <p class="text-[rgba(13,35,59,1)] text-[15px]">Отзывы</p>
+    <p class="text-[rgba(13,35,59,1)] text-[15px]">Контакты</p>
+  </div>
+
+  <!-- хлебные крошки -->
+  <div class="flex pt-5 gap-[10px] lg:pt-[20px]">
+    <p class="text-[rgba(13,35,59,1)] text-[15px]">Главная</p>
+    <img src="./images/strel1.svg" alt="">
+    <p class="text-[rgba(13,35,59,1)] text-[15px] font-bold">Анализы</p>
+  </div>
+</header>
+
+<!-- АНАЛИЗЫ -->
+<section class="px-5 pt-5 pb-10 lg:px-[150px] lg:pt-[20px] lg:pb-[50px]">
+  <div class="text-[rgba(13,35,59,1)] text-[28px] lg:text-[40px] font-bold mb-[30px]">Анализы</div>
+
+  <div class="flex flex-col gap-4 lg:flex-row lg:gap-6">
+
+    <div class="lg:w-[50%] bg-[#27AE60] rounded-[16px] p-6 lg:p-8 text-white relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+      <div class="max-w-[280px] z-10">
+        <h2 class="text-[26px] font-bold mb-[16px]">Скидка -20% на МРТ</h2>
+        <p class="text-[13px] text-white mb-[24px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra amet dolor sed mi tincidunt pharetra montes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra amet dolor sed mi tincidunt pharetra montes.</p>
+      </div>
+      <div class="z-10">
+        <p class="text-[12px] text-white/80">Акция действует до</p>
+        <p class="text-[15px] font-bold mb-4">22.03.2023</p>
+        <button class="bg-white text-[#27AE60] px-[24px] py-[10px] rounded-full text-[14px] font-medium flex items-center gap-[8px]">Подробнее ></button>
+      </div>
+      <img class="absolute right-[-1px] bottom-[-1px] w-[280px]" src="./images/mrt1.svg" alt="МРТ">
+    </div>
+
+    <div class="lg:w-[50%] bg-[rgb(41,182,216)] rounded-[16px] p-6 lg:p-8 text-white relative flex flex-col justify-between min-h-[300px]">
+      <div class="max-w-[280px]">
+        <h2 class="text-[26px] font-bold mb-4 leading-tight">Скидка -20% на МРТ</h2>
+        <p class="text-[13px] text-white mb-[24px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra amet dolor sed mi tincidunt pharetra montes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra amet dolor sed mi tincidunt pharetra montes.</p>
+      </div>
+      <div>
+        <p class="text-[12px] text-white/80">Акция действует до</p>
+        <p class="text-[15px] font-bold mb-4">22.03.2023</p>
+        <button class="bg-white text-[#29B6D8] px-6 py-[10px] rounded-full text-[14px] font-medium flex items-center gap-2">Подробнее ></button>
+      </div>
+      <img class="absolute right-[-1px] bottom-[-1px] w-[280px]" src="./images/mrt2.svg" alt="">
+    </div>
+
+  </div>
+</section>
+
+<!-- КАК ПОЛУЧИТЬ ЛЕЧЕНИЕ -->
+<section class="px-5 py-8 lg:p-[30px_150px]">
+
+  <div>
+    <h1 class="text-black text-[28px] lg:text-[40px] font-bold">Как получить лечение?</h1>
+
+    <div class="flex flex-col gap-5 pt-8 lg:flex-row lg:gap-[30px] lg:pt-[50px]">
+
+      <div class="lg:w-[400px] lg:h-[258px] shadow-[0px_4px_30px_0px_rgba(0,0,0,0.15)] p-5 rounded-[10px]">
+        <img src="./images/lupa.svg" alt="">
+        <p class="text-[18px] text-[rgba(67,67,67,1)] pt-[30px] font-medium">Узнайте, входит ли интересующее <br> вас лечение в программу для вашего <br> региона</p>
+      </div>
+
+      <div class="lg:w-[400px] lg:h-[258px] shadow-[0px_4px_30px_0px_rgba(0,0,0,0.15)] p-5 rounded-[10px]">
+        <img src="./images/papka.svg" alt="">
+        <p class="text-[18px] text-[rgba(67,67,67,1)] pt-[30px] font-medium">Подготовьте необходимые документы <br> и отправьте заявку на лечение</p>
+      </div>
+
+      <div class="lg:w-[400px] lg:h-[258px] shadow-[0px_4px_30px_0px_rgba(0,0,0,0.15)] p-5 rounded-[10px]">
+        <img src="./images/tel.svg" alt="">
+        <p class="text-[18px] text-[rgba(67,67,67,1)] pt-[30px] font-medium">В течение 3-х рабочих дней <br> специалист отдела ОМС свяжется с <br> вами по указанному вами номеру <br> телефона</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ВИДЫ АНАЛИЗОВ -->
+  <div class="pt-20 lg:pt-[200px]">
+    <h1 class="text-black text-[28px] lg:text-[40px] font-bold">Популярные анализы</h1>
+
+    <div class="flex flex-col gap-5 lg:flex-row lg:flex-wrap lg:gap-[50px]">
+
+      <div class="lg:w-[270px] lg:h-[282px] rounded-[5px] border-[2px] border-gray-300 mt-[40px] p-5">
+        <img src="./images/plus.svg" alt="">
+        <h2 class="pt-[20px] text-[22px] text-[rgba(59,185,109,1)] font-bold"><span class="border-b-[3px] border-b-[rgba(59,185,109,1)]">Онк</span>ология</h2>
+        <P class="text-[16px] text-[rgba(13,35,59,1)] mt-[20px]">Гистология</P>
+        <P class="text-[16px] text-[rgba(13,35,59,1)] mt-[20px]">Онкомаркёры</P>
+        <P class="text-[16px] text-[rgba(13,35,59,1)] mt-[20px]">Цитология</P>
+      </div>
+
+      <div class="lg:w-[270px] lg:h-[282px] rounded-[5px] border-[2px] border-gray-300 mt-[40px] p-5">
+        <img src="./images/kapel.svg" alt="">
+        <h2 class="pt-[20px] text-[19px] text-[rgba(59,185,109,1)] font-bold"><span class="border-b-[3px] border-b-[rgba(59,185,109,1)]">Иссл</span>едования крови </h2>
+        <P class="text-[16px] text-[rgba(13,35,59,1)] mt-[15px]">Клинические исследования</P>
+        <P class="text-[16px] text-[rgba(13,35,59,1)] mt-[15px]">Биохимия</P>
+        <P class="text-[16px] text-[rgba(13,35,59,1)] mt-[15px]">Иммунология</P>
+        <P class="text-[16px] text-[rgba(13,35,59,1)] mt-[15px]">Гормоны</P>
+      </div>
+
+      <div class="lg:w-[270px] lg:h-[282px] rounded-[5px] border-[2px] border-gray-300 mt-[40px] p-5">
+        <img src="./images/kofee.svg" alt="">
+        <h2 class="pt-[20px] text-[22px] text-[rgba(59,185,109,1)] font-bold"><span class="border-b-[3px] border-b-[rgba(59,185,109,1)]">Иссл</span>едования мочи</h2>
+        <P class="text-[16px] text-[rgba(13,35,59,1)] mt-[20px]">Биохимический анализ мочи</P>
+        <P class="text-[16px] text-[rgba(13,35,59,1)] mt-[20px]">Общий анализ мочи</P>
+        <P class="text-[16px] text-[rgba(13,35,59,1)] mt-[20px]">Гормоны</P>
+      </div>
+
+      <div class="lg:w-[270px] lg:h-[282px] rounded-[5px] border-[2px] border-gray-300 mt-[40px] p-5">
+        <img src="./images/rek.svg" alt="">
+        <h2 class="pt-[20px] text-[22px] text-[rgba(59,185,109,1)] font-bold"><span class="border-b-[3px] border-b-[rgba(59,185,109,1)]">Алле</span>ргии</h2>
+        <P class="text-[16px] text-[rgba(13,35,59,1)] mt-[20px]">Аллергокомпоненты</P>
+        <P class="text-[16px] text-[rgba(13,35,59,1)] mt-[20px]">Индивидуальные аллергены</P>
+        <P class="text-[16px] text-[rgba(13,35,59,1)] mt-[20px]">Аллергия на лекарства</P>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ТЁМНЫЙ БЛОК -->
+<section class="bg-[rgb(43,43,43)] text-white pt-[50px] pb-10">
+  <div class="flex flex-col gap-8 px-5 lg:flex-row lg:justify-between lg:items-center lg:p-[0px_150px] lg:pb-0">
+
+    <div>
+      <h2 class="text-[20px] lg:text-[24px] font-bold mb-[30px]">Виды лабораторных анализов и исследований</h2>
+
+      <div class="flex flex-col gap-5 lg:flex-row lg:gap-[50px] text-[14px]">
+        <ul class="flex flex-col gap-[14px]">
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Общие исследования крови</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Биохимические исследования крови</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Онкомаркёры</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Общеклинические исследования кала</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Панели аллергенов</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Гистологические исследования</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Гормональные исследования крови</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Исследования мочи</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Иммунологические исследования крови</li>
+        </ul>
+
+        <ul class="flex flex-col gap-[14px]">
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Гематологические исследования</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Аллергологические исследования</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Исследования кала</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Аутоиммунные заболевания</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Исследование спермы</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Генетический анализ</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Исследования крови на инфекции</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Цитологические исследования</li>
+          <li class="flex items-center gap-[8px]"><span class="p-[4px] rounded-full bg-[rgb(47,179,107)]"></span>Исследования инфекционных заболеваний</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="relative hidden lg:block">
+      <img src="images/medsestra.svg" alt="медсестра" class="relative bottom-[100px]">
+    </div>
+
+  </div>
+</section>
+
+<!-- ЛИЦЕНЗИИ -->
+<section class="bg-[rgb(246,247,249)] p-5 lg:p-[100px_150px]">
+  <h2 class="text-[20px] lg:text-[24px] font-bold mb-[30px]">Наши лицензии</h2>
+
+  <div class="flex flex-wrap gap-4 lg:flex-nowrap lg:justify-between">
+    <img src="images/lic.svg" alt="Лицензия">
+    <img src="images/lic.svg" alt="Лицензия">
+    <img src="images/lic.svg" alt="Лицензия">
+    <img src="images/lic.svg" alt="Лицензия">
+  </div>
+</section>
+
+<!-- ЗАКАЗ ЗВОНКА -->
+<section class="bg-white p-5 lg:p-[80px_100px]">
+
+  <div class="bg-[rgb(43,43,43)] text-white rounded-[40px] p-[30px] lg:p-[40px_30px_0_30px] flex flex-col lg:flex-row lg:justify-between lg:items-end z-10">
+
+    <div class="pb-5 lg:pb-[30px]">
+      <h2 class="text-[22px] lg:text-[30px] font-bold mb-[15px]">Хотите, мы Вам перезвоним?</h2>
+      <p class="text-[12px] mb-[25px]">Оставьте заявку и мы подробно ответим на все Ваши вопросы!</p>
+
+      <div class="flex flex-col gap-4 mb-[15px] lg:flex-row lg:gap-[20px]">
+        <div class="flex flex-col gap-[10px]">
+          <label class="text-[13px] font-bold">Ваше ФИО</label>
+          <input type="text" placeholder="Иванов Иван Иванович" class="bg-[rgb(240,244,248)] text-[rgb(43,43,43)] text-[11px] rounded-full p-[12px_20px] outline-none">
+        </div>
+
+        <div class="flex flex-col gap-[10px]">
+          <label class="text-[13px] font-bold">Номер телефона</label>
+          <input type="te" placeholder="+7 (___) ___-__-__" class="bg-[rgb(240,244,248)] text-[rgb(43,43,43)] text-[11px] rounded-full p-[12px_20px] outline-none">
+        </div>
+      </div>
+
+      <button class="bg-[rgb(47,179,107)] text-white text-[13px] font-bold rounded-full p-[12px_45px] mb-[25px]">Заказать звонок</button>
+
+      <p class="text-[11px]">
+        Нажимая на кнопку Заказать звонок вы соглашаетесь с
+        <a class="text-[rgb(47,179,107)] underline">политикой конфиденциальности</a>
+      </p>
+    </div>
+
+    <img src="./images/doctor2.svg" alt="доктор2" class="hidden lg:block mt-[-60px] relative right-[-30px] z-0">
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-green-600 text-white px-5 py-8 lg:px-[150px] lg:py-[60px]">
+
+  <!-- Логотип -->
+  <img src="./images/logo.svg" alt="Ваш доктор рядом" class="w-[160px] mb-6">
+
+  <!-- Контакты: Адрес / Телефон / Почта -->
+  <div class="flex gap-6 lg:gap-[80px]">
+    <div>
+      <p class="text-[15px] mb-2">Адрес</p>
+      <p class="text-[14px] text-white/80">Москва, ул.<br>Пушкина, д.43</p>
+    </div>
+    <div>
+      <p class="text-[15px] mb-2">Телефон</p>
+      <p class="text-[14px] text-white/80">+7 (9__) ___-__-__</p>
+    </div>
+    <div>
+      <p class="text-[15px] mb-2">Почта</p>
+      <p class="text-[14px] text-white/80">Poshta@gmail.com</p>
+    </div>
+  </div>
+
+  <!-- Меню 2 колонки -->
+  <div class="grid grid-cols-2 gap-x-6 gap-y-8 mt-10 lg:grid-cols-4 lg:gap-x-10">
+
+    <div>
+      <h3 class="text-[16px] font-bold mb-4">О клинике</h3>
+      <ul class="flex flex-col gap-3 text-[14px] text-white/80">
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-[16px] font-bold mb-4">Врач</h3>
+      <ul class="flex flex-col gap-3 text-[14px] text-white/80">
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-[16px] font-bold mb-4">Пациентам</h3>
+      <ul class="flex flex-col gap-3 text-[14px] text-white/80">
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-[16px] font-bold mb-4">Услуги</h3>
+      <ul class="flex flex-col gap-3 text-[14px] text-white/80">
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+        <li>Название пункта меню</li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
